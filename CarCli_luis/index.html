@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Clicker — MVC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>CAR <span>CLICKER</span></h1>
+    <p>Selecciona un auto y haz clic para contar</p>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row g-0">
+
+      <!-- Lista de autos -->
+      <aside class="col-md-3">
+        <h2 class="list-title">Autos</h2>
+        <ul id="car-list" class="list-group car-list"></ul>
+      </aside>
+
+      <!-- Detalle del auto -->
+      <section class="col-md-9 car-detail" id="car">
+        <div class="car-info">
+          <h2 id="car-name">Selecciona un auto</h2>
+          <div class="count-badge">
+            <span id="car-count">0</span>
+            <label>clics</label>
+          </div>
+        </div>
+        <div class="car-image-wrap">
+          <img id="car-img" src="" alt="auto seleccionado" />
+          <div class="click-hint">¡Haz clic en la imagen!</div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Scripts MVC -->
+  <script src="model.js"></script>
+  <script src="view.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>
